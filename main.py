@@ -19,7 +19,7 @@ def generate_password(length, min_uppercase, min_digits, min_special):
     # Add  special characters
     password.extend(random.choices(string.punctuation, k=min_special))
     
-    # Fill the rest with random characters
+    # Fill the random characters
     remaining_length = length - len(password)
     if remaining_length > 0:
         all_characters = string.ascii_letters + string.digits + string.punctuation
